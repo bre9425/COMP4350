@@ -23,11 +23,13 @@ const Sphere = () => {
           },
         });
         const data = await res.json();
+        console.log(data);
         const users = data.listUsers.map(user => ({
           id: user._id,
           username: user.username,
           interests: user.interests,
-          pictures: user.pictures
+          pictures: user.pictures,
+          bio: user.bio && user.bio.trim().length > 0 ? user.bio : 'User is lazy, no bio yet :)'
         }));
         setMatches(users);
       } catch (err) {
@@ -115,7 +117,8 @@ const Sphere = () => {
             id: intersects[0].object.userData.id,
             username: intersects[0].object.userData.username,
             interests: intersects[0].object.userData.interests,
-            pictures: intersects[0].object.userData.pictures
+            pictures: intersects[0].object.userData.pictures,
+            bio: intersects[0].object.userData.bio
           };
           setSelectedUser(userData);
           setIsModalOpen(true);
