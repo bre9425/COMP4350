@@ -238,7 +238,8 @@ export async function getInterestMatches(req, res){
 
         const pipeline = [
             { 
-                $match: { _id: { $nin: excludedUsers}} 
+                $match: { _id: { $nin: excludedUsers},
+                          interests: {$in: userInterests}} 
             },
             { 
                 $project: {

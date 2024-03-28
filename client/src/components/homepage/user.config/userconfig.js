@@ -18,6 +18,8 @@ const UserConfig = () => {
   const [uploaded, setUploaded] = useState(false);
   const [imageURLs, setImageURLs] = useState([]);
   const [currentUserName, setCurrentUserName] = useState('');
+  const [currentUserBio, setCurrentUserBio] = useState('');
+  const [currentUserInterests, setCurrentUserInterests] = useState([]);
 
   useEffect(() => {
       const token = localStorage.getItem('token');
@@ -50,9 +52,18 @@ const UserConfig = () => {
               });
 
               const userData = await res.json();
+              console.log(userData);
 
               if (userData && userData.userObj && userData.userObj.username) {
                   setCurrentUserName(userData.userObj.username);
+              }
+
+              if (userData && userData.userObj && userData.userObj.bio) {
+                setCurrentUserBio(userData.userObj.bio);
+              }
+
+              if (userData && userData.userObj && userData.userObj.interests) {
+                setCurrentUserInterests(userData.userObj.interests);
               }
 
               if (userData && userData.userObj && userData.userObj.pictures && userData.userObj.pictures.length > 0) {
@@ -246,6 +257,14 @@ const UserConfig = () => {
                 ) : (
                     <h1 className='current-user-name'>{currentUserName}</h1>
                 )}
+            </div>
+            <h3 style={{color:"white"}}>Bio:</h3>
+            <p style={{color:"white"}}>{currentUserBio}</p>
+            <h3 style={{color:"white"}}>interests:</h3>
+            <div style={{color:"white"}}>
+              {currentUserInterests.map((interest, index) => (
+                <div key={index}>{interest}</div>
+              ))}
             </div>
             <input type="file" multiple onChange={handleFileChange} />
             <p style={{color:"white"}}>After choose new picture, click on upload first, then click on save</p>

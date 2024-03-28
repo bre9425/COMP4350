@@ -280,3 +280,8 @@
     color: white;
     font-size: 14px;
 }
+
+.conversation-box.active-convo {
+    background-color: rgba(39, 149, 234, 0.807);
+    color: white;
+}
