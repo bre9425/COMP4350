@@ -50,6 +50,7 @@ const Finally = () => {
         const retrieveConversations = async () => {
             try {
                 const token = localStorage.getItem('token');
+    
                 const res = await fetch(`${serverURL}:${serverPort}/api/convo/getConvos`, {
                     method: "GET",
                     headers: {
@@ -57,15 +58,47 @@ const Finally = () => {
                         'Authorization': 'Bearer ' + token,
                     }
                 });
-                const data = await res.json();
-                setConvos(data);
+
+                let convosTemp = await res.json();
+    
+                const updatedConvos = await Promise.all(convosTemp.map(async (convo) => {
+                    const userId = convo.userId;
+    
+                    const userDataRes = await fetch(`${serverURL}:${serverPort}/api/user/getUser`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': 'Bearer ' + token
+                        },
+                        body: JSON.stringify({ '_id': userId }),
+                    });
+
+                    const userData = await userDataRes.json();
+
+                    if (!userData || !userData.userObj || !userData.userObj.pictures) return convo;
+    
+                    const imageURLs = await Promise.all(userData.userObj.pictures.map(async (mediaKey) => {
+                        const mediaRes = await fetch(`${serverURL}:${serverPort}/api/images/getImageURL`, {
+                            method: "POST",
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ fileName: mediaKey })
+                        });
+                        const mediaData = await mediaRes.json();
+                        return mediaData.url;
+                    }));
+    
+                    return { ...convo, imageURLs: imageURLs.filter(url => url !== null) };
+                }));
+    
+                setConvos(updatedConvos);
             } catch (err) {
-                console.error("Error retrieving matches:", err);
+                console.error("Error retrieving data:", err);
             }
         };
+    
         retrieveConversations();
     }, []);
-
+    
     useEffect(() => {
         const retrieveMessages = async () => {
             try {
@@ -109,22 +142,18 @@ const Finally = () => {
             }
         };
     
-        // Execute once immediately upon mounting or when currChat changes
         if (currChat) {
             retrieveMessages();
         }
     
-        // Then set up the interval for subsequent executions
         const intervalId = setInterval(() => {
             if (currChat) {
                 retrieveMessages();
             }
-        }, 5000); // Fetch new messages every 5 seconds
-    
-        // Clean up the interval on component unmount or when currChat changes
+        }, 5000);
+
         return () => clearInterval(intervalId);
-    }, [currChat]); // Dependency array, ensures the interval is reset if currChat changes
-    
+    }, [currChat]);
 
     const handleDeleteMessage = async (messageId) => {
         try {
@@ -338,14 +367,24 @@ const Finally = () => {
             <div className="finally" style={{ height: '100vh', display: 'flex', color: 'white' }}>
                 <div className="chatMenu">
                     <div className='chatMenuWrapper'>
-                        <div className='conversation'>
-                            {convos.map((convo) => (
-                                <div key={convo._id} className='conversation-box' onClick={() => setCurrChat(convo._id)}>
+
+                    <div className='conversation'>
+                        {convos.map((convo) => (
+                            <div
+                                key={convo._id}
+                                className={`conversation-box ${currChat === convo._id ? 'active-convo' : ''}`}
+                                onClick={() => setCurrChat(convo._id)}
+                            >
+                                {convo.imageURLs.length > 0 ? (
+                                    <img src={convo.imageURLs} alt={convo.username} style={{ borderRadius: '50%', width: '50px', height: '50px' }} />
+                                ) : (
                                     <Avatar name={convo.username} round={true} size="50" />
-                                    <span className='conversationName'>{convo.username}</span>
-                                </div>
-                            ))}
-                        </div>
+                                )}
+                                <span className='conversationName'>{convo.username}</span>
+                            </div>
+                        ))}
+                    </div>
+
                     </div>
                 </div>
                 <div className='chatBox'>
@@ -382,9 +421,6 @@ const Finally = () => {
                                                 <label htmlFor="burnCheckbox">Burn after read</label>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div id="buttonContainer">
-
                                     </div>
                                 </div>
                             </>
