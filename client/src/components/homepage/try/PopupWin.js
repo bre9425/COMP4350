@@ -65,6 +65,7 @@ const PopupWin = ({ isOpen, onClose, userData, onLike }) => {
         <button className="close-button" onClick={handlePreCloseLogic}>x</button>
         <div className='popup-content'>
           <h1>{userData.username}</h1>
+          <p>Bio: {userData.bio}</p>
           <p>Interests: {userData.interests.join(', ')}</p>
         </div>
         <div className="mediaLinkBox">

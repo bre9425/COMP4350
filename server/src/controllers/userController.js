@@ -246,6 +246,7 @@ export async function getInterestMatches(req, res){
                     username: 1,
                     interests: 1,
                     pictures: 1,
+                    bio: 1,
                     commonInterestsCount: { $size: { $setIntersection: ["$interests", userInterests] } },
             }},
             {
