@@ -23,13 +23,13 @@ const Sphere = () => {
           },
         });
         const data = await res.json();
-        console.log(data);
         const users = data.listUsers.map(user => ({
           id: user._id,
           username: user.username,
           interests: user.interests,
           pictures: user.pictures,
-          bio: user.bio && user.bio.trim().length > 0 ? user.bio : 'User is lazy, no bio yet :)'
+          bio: user.bio && user.bio.trim().length > 0 ? user.bio : 'User is lazy, no bio yet :)',
+          commonInterestsCount: user.commonInterestsCount
         }));
         setMatches(users);
       } catch (err) {
@@ -61,7 +61,8 @@ const Sphere = () => {
     const labels = [];
 
     matches.forEach((match, index) => {
-      const material = new THREE.MeshBasicMaterial({ color: 0xabcdef });
+      const materialColor = match.commonInterestsCount === 0 ? 0xff0000 : 0xabcdef;
+      const material = new THREE.MeshBasicMaterial({ color: materialColor });
       const node = new THREE.Mesh(nodeGeometry, material);
       node.userData = match;
 
