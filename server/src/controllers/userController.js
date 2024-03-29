@@ -234,7 +234,7 @@ export async function getInterestMatches(req, res){
         const likedUsers = Array.from(user.likes.keys());
         const dislikedUsers = user.dislikes;
 
-        const excludedUsers = [...likedUsers, ...dislikedUsers, user._id];
+        const excludedUsers = [...likedUsers, ...dislikedUsers, user._id]; 
 
         const pipeline = [
             { 

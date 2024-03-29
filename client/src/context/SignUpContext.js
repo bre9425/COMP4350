@@ -15,6 +15,7 @@ export const SignUpProvider = ({ children }) => {
 
     const [data, setData] = useState({
         password: "", 
+        confirmPassword: "",
         username: "",
         DOB: "",
         postalCode: "",
@@ -28,6 +29,7 @@ export const SignUpProvider = ({ children }) => {
     })
 
     const handleChange = e => {
+        console.log(`the change is ${e.target.value}`)
         const name = e.target.name
         const value = e.target.value === 'file'  ? e.target.files[0] : e.target.value;
 
@@ -49,7 +51,7 @@ export const SignUpProvider = ({ children }) => {
 
     const canSubmit = page === Object.keys(title).length - 1
 
-    const canNextPage1 = true 
+    const canNextPage1 = data.password.trim().length >= 8 && data.password.trim().length <= 20 && data.username.trim().length >= 4 && data.DOB.trim().length !== "" && data.password === data.confirmPassword 
 
     const canNextPage2 = true 
 

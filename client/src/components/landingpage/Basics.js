@@ -81,6 +81,10 @@ const Basics = () => {
         handleChange(e); 
         setPwd(e.target.value)
     } 
+    const handleConfirmPwdChange = (e) => {
+        handleChange(e); 
+        setMatch(e.target.value)
+    } 
 
     const content = (
         <div className="basics-div" style={{width:"min-content"}}>
@@ -119,28 +123,30 @@ const Basics = () => {
                 Password must contain one upppercase, one lowercase, one number, one special character and be between 8-24 characters.
             </p>
 
-            <label htmlFor="confirmpassword" className="offscreen">Confirm Password</label>
+            <label htmlFor="confirmPassword" className="offscreen">Confirm Password</label>
             <input
                 className="basic-input"
                 type="password"
-                id="confirmpassword"
-                name="password"
+                id="confirmassword"
+                name="confirmPassword"
                 placeholder="Confirm Password"
-                onBlur={e => {setMatch(e.target.value)}}
+                value={data.confirmPassword}
+                onChange={handleConfirmPwdChange}
+                onBlur={e => setMatch(e.target.value)}
             />
             <p id="uidnote" className={!matches ? "instructions" : "offscreen"}>
                 <FontAwesomeIcon icon={faInfoCircle} style={{marginRight:"2px"}}/>
                 Passwords do not match.
             </p>
-            <label className="basic-label" htmlFor="birthday">Birthday</label>
+            <label className="basic-label" htmlFor="DOB">Birthday</label>
             <input
                 className="basic-input"
                 type="date"
                 id="birthday"
-                name="birthday"
+                name="DOB"
                 placeholder="Birthday (MM/DD/YYYY)"
                 pattern="\d{2}\/\d{2}\/\d{4}"
-                value={data.birthday}
+                value={data.DOB}
                 onChange={handleChange}
             />
         </div>
