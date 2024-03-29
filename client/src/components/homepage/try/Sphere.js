@@ -22,6 +22,7 @@ const Sphere = () => {
             'Authorization': 'Bearer ' + token,
           },
         });
+        
         const data = await res.json();
         const users = data.listUsers.map(user => ({
           id: user._id,
