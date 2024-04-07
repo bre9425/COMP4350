@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.8375, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.8375, 500, 1500, "Get community posts"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.4025, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.4025, 500, 1500, "Get community posts"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 200, 0, 0.0, 563.5750000000005, 381, 1380, 451.0, 982.3000000000002, 1056.85, 1366.91, 3.585900240255316, 8.138312654641947, 1.2466606304012622], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Get community posts", 200, 0, 0.0, 563.5750000000005, 381, 1380, 451.0, 982.3000000000002, 1056.85, 1366.91, 3.585900240255316, 8.138312654641947, 1.2466606304012622], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 200, 0, 0.0, 1229.3600000000004, 496, 2087, 1207.5, 1692.6, 1763.4499999999998, 1981.5700000000004, 15.124016938898972, 55.16426100272232, 5.257959013914095], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Get community posts", 200, 0, 0.0, 1229.3600000000004, 496, 2087, 1207.5, 1692.6, 1763.4499999999998, 1981.5700000000004, 15.124016938898972, 55.16426100272232, 5.257959013914095], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:

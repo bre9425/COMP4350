@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 200,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 1229.3600000000004,
+    "medianResTime" : 1207.5,
+    "minResTime" : 496.0,
+    "maxResTime" : 2087.0,
+    "pct1ResTime" : 1692.6,
+    "pct2ResTime" : 1763.4499999999998,
+    "pct3ResTime" : 1981.5700000000004,
+    "throughput" : 15.124016938898972,
+    "receivedKBytesPerSec" : 55.16426100272232,
+    "sentKBytesPerSec" : 5.257959013914095
+  },
+  "Get community posts" : {
+    "transaction" : "Get community posts",
+    "sampleCount" : 200,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 1229.3600000000004,
+    "medianResTime" : 1207.5,
+    "minResTime" : 496.0,
+    "maxResTime" : 2087.0,
+    "pct1ResTime" : 1692.6,
+    "pct2ResTime" : 1763.4499999999998,
+    "pct3ResTime" : 1981.5700000000004,
+    "throughput" : 15.124016938898972,
+    "receivedKBytesPerSec" : 55.16426100272232,
+    "sentKBytesPerSec" : 5.257959013914095
+  }
+}
