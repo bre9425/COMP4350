@@ -102,6 +102,85 @@
  - sorted out any bugs found
  - deployed and hosting it on the web
 
+ # Sprint 4
+
+### March 16th, 2024
+- Participants: all group members
+- Time: 5:00 - 6:00 pm
+- Location: Discord
+- What was discussed
+  - went through remaining tasks to do for Sprint 4
+  - assigned tasks to members
+    - Dingyuan: improve front end
+    - Breanna: Security Scan
+    - Daniel and Joy: Release document
+    - Rahul: Backend optimization
+
+
+### March 19th, 2024
+- Participants: all group members
+- Time: 5:00 - 7:00 pm
+- Location: Eng building and Discord
+- What was discussed:
+ - review of what everyone is working on
+ - shared release document tasks among ourselves
+ - Breanna: got assigned load testing
+
+
+### March 22th, 2024
+- Participants: all group members
+- Time: 5:00 - 7:00 pm
+- Location: Eng building and Discord
+- What was discussed:
+ - went through the points TA gave us during the meeting
+ - worked out the ice breaker feature 
+ - assigned ice breaker feature - Joy and Dingyuan
+
+### March 25nd, 2024
+- Participants: all group members
+- Time: 3:00 - 4:00 pm
+- Location: Eng building and Discord
+- What was discussed:
+ - Review of our assigned work distribution. Went over the bugs that came up
+ - Discussed the details on how the ice breaker feature should look
+ - All worked on the release document
+ - Preparation of slides for presentation
+
+### March 27th, 2024
+- Participants: all group members
+- Time: 1:00 - 2:00 pm
+- Location: Eng building
+- What was discussed:
+ - assigned tasks for the Presentation
+  - Breanna: worked on the demo and slides
+  - Everyone else: worked on different slides
+
+### March 29th, 2024
+- Participants: all group members
+- Time: 5:00 - 7:00 pm
+- Location: Discord
+- What was discussed:
+ - Went through the ice breaker feature and the new UI for the sphere
+ - Went through the release documents 
+ - Re-assigned parts of release documents to those better suited to answer
+ - Chose the next meeting time
+
+### April 1st, 2024
+- Participants: all group members
+- Time: 3:00 - 4:00 pm
+- Location: Eng building and Discord
+- What was discussed:
+ - Went through the presentation slides and demo
+ - Fixed any underlying bugs that surfaced
+
+### April 3rd, 2024
+- Participants: all group members
+- Time: 5:00 - 7:00 pm
+- Location: Eng building and Discord
+- What was discussed:
+ - Practice session for the presentation
+
+
 # TA Meetings
 
 # Sprint 1
@@ -147,3 +226,13 @@
   - Asked if we deployed our project somewhere 
   - Went through our tests with him
   - Discussed about sprint 4 and what we were supposed to do if we finish everything by sprint 3
+
+# Sprint 3
+
+### March 20th, 2024
+- Particpants: Rahul, Dingyuan, Joy
+- Discussed
+  - Went through our features with the TA
+  - Went through a demo of our project with him
+  - Went through our tests with him
+  - Discussed what else to do for Sprint 4
