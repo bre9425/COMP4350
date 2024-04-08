@@ -102,7 +102,7 @@
  - sorted out any bugs found
  - deployed and hosting it on the web
 
- # Sprint 4
+# Sprint 4
 
 ### March 16th, 2024
 - Participants: all group members
@@ -144,16 +144,9 @@
  - Review of our assigned work distribution. Went over the bugs that came up
  - Discussed the details on how the ice breaker feature should look
  - All worked on the release document
- - Preparation of slides for presentation
+ - Breanna: Worked on the demo video for presentation
+ - assigned parts of presentation slides to members
 
-### March 27th, 2024
-- Participants: all group members
-- Time: 1:00 - 2:00 pm
-- Location: Eng building
-- What was discussed:
- - assigned tasks for the Presentation
-  - Breanna: worked on the demo and slides
-  - Everyone else: worked on different slides
 
 ### March 29th, 2024
 - Participants: all group members
