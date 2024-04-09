@@ -1,0 +1,375 @@
+{
+    "files": [
+        {
+            "/docker-compose.yml": "/github/workspace/docker-compose.yml"
+        },
+        {
+            "/package-lock.json": "/github/workspace/package-lock.json"
+        },
+        {
+            "/.github/workflows/test.yml": "/github/workspace/.github/workflows/test.yml"
+        },
+        {
+            "/.github/workflows/security.yml": "/github/workspace/.github/workflows/security.yml"
+        },
+        {
+            "/.github/workflows/build.yml": "/github/workspace/.github/workflows/build.yml"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/index.html": "/github/workspace/Documents/LoadTests/HTMLReport/index.html"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/statistics.json": "/github/workspace/Documents/LoadTests/HTMLReport/statistics.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/content/pages/Throughput.html": "/github/workspace/Documents/LoadTests/HTMLReport/content/pages/Throughput.html"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/content/pages/CustomsGraphs.html": "/github/workspace/Documents/LoadTests/HTMLReport/content/pages/CustomsGraphs.html"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/content/pages/OverTime.html": "/github/workspace/Documents/LoadTests/HTMLReport/content/pages/OverTime.html"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/content/pages/ResponseTimes.html": "/github/workspace/Documents/LoadTests/HTMLReport/content/pages/ResponseTimes.html"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/content/js/jquery.cookie.js": "/github/workspace/Documents/LoadTests/HTMLReport/content/js/jquery.cookie.js"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/content/js/jquery.tablesorter.min.js": "/github/workspace/Documents/LoadTests/HTMLReport/content/js/jquery.tablesorter.min.js"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/.travis.yml": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/.travis.yml"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/component.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/component.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/flot.jquery.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/flot.jquery.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/package.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/package.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/.bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot/.bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot-axislabels/.bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot-axislabels/.bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/jquery/bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/jquery/bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/jquery/.bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/jquery/.bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/jquery/dist/jquery.js": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/jquery/dist/jquery.js"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/bootstrap/.bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/bootstrap/.bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot.tooltip/bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot.tooltip/bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot.tooltip/.bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/flot.tooltip/.bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/metisMenu/.bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/metisMenu/.bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/font-awesome/bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/font-awesome/bower.json"
+        },
+        {
+            "/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/font-awesome/.bower.json": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/font-awesome/.bower.json"
+        },
+        {
+            "/server/package-lock.json": "/github/workspace/server/package-lock.json"
+        },
+        {
+            "/server/jest.setup.js": "/github/workspace/server/jest.setup.js"
+        },
+        {
+            "/server/babel.config.json": "/github/workspace/server/babel.config.json"
+        },
+        {
+            "/server/package.json": "/github/workspace/server/package.json"
+        },
+        {
+            "/server/__test__/community.test.js": "/github/workspace/server/__test__/community.test.js"
+        },
+        {
+            "/server/__test__/user.test.js": "/github/workspace/server/__test__/user.test.js"
+        },
+        {
+            "/server/__test__/messages.test.js": "/github/workspace/server/__test__/messages.test.js"
+        },
+        {
+            "/server/__test__/like.test.js": "/github/workspace/server/__test__/like.test.js"
+        },
+        {
+            "/server/__test__/convo.test.js": "/github/workspace/server/__test__/convo.test.js"
+        },
+        {
+            "/server/src/app.js": "/github/workspace/server/src/app.js"
+        },
+        {
+            "/server/src/routes/convoRouter.js": "/github/workspace/server/src/routes/convoRouter.js"
+        },
+        {
+            "/server/src/routes/messageRouter.js": "/github/workspace/server/src/routes/messageRouter.js"
+        },
+        {
+            "/server/src/routes/communityRouter.js": "/github/workspace/server/src/routes/communityRouter.js"
+        },
+        {
+            "/server/src/routes/userRouter.js": "/github/workspace/server/src/routes/userRouter.js"
+        },
+        {
+            "/server/src/routes/imageRouter.js": "/github/workspace/server/src/routes/imageRouter.js"
+        },
+        {
+            "/server/src/controllers/communityController.js": "/github/workspace/server/src/controllers/communityController.js"
+        },
+        {
+            "/server/src/controllers/convoController.js": "/github/workspace/server/src/controllers/convoController.js"
+        },
+        {
+            "/server/src/controllers/userController.js": "/github/workspace/server/src/controllers/userController.js"
+        },
+        {
+            "/server/src/controllers/imageController.js": "/github/workspace/server/src/controllers/imageController.js"
+        },
+        {
+            "/server/src/controllers/messageController.js": "/github/workspace/server/src/controllers/messageController.js"
+        },
+        {
+            "/server/src/config/auth.js": "/github/workspace/server/src/config/auth.js"
+        },
+        {
+            "/server/src/config/db.js": "/github/workspace/server/src/config/db.js"
+        },
+        {
+            "/server/src/models/userModel.js": "/github/workspace/server/src/models/userModel.js"
+        },
+        {
+            "/client/package-lock.json": "/github/workspace/client/package-lock.json"
+        },
+        {
+            "/client/package.json": "/github/workspace/client/package.json"
+        },
+        {
+            "/client/public/manifest.json": "/github/workspace/client/public/manifest.json"
+        },
+        {
+            "/client/public/index.html": "/github/workspace/client/public/index.html"
+        },
+        {
+            "/client/__mocks__/styleMock.js": "/github/workspace/client/__mocks__/styleMock.js"
+        },
+        {
+            "/client/__mocks__/fileMock.js": "/github/workspace/client/__mocks__/fileMock.js"
+        },
+        {
+            "/client/src/App.js": "/github/workspace/client/src/App.js"
+        },
+        {
+            "/client/src/index.js": "/github/workspace/client/src/index.js"
+        },
+        {
+            "/client/src/hooks/useSignUpContext.js": "/github/workspace/client/src/hooks/useSignUpContext.js"
+        },
+        {
+            "/client/src/components/homepage/finally/Finally.js": "/github/workspace/client/src/components/homepage/finally/Finally.js"
+        },
+        {
+            "/client/src/components/homepage/fixedcomponents/Header.js": "/github/workspace/client/src/components/homepage/fixedcomponents/Header.js"
+        },
+        {
+            "/client/src/components/homepage/fixedcomponents/NavBar.js": "/github/workspace/client/src/components/homepage/fixedcomponents/NavBar.js"
+        },
+        {
+            "/client/src/components/homepage/user.config/userconfig.js": "/github/workspace/client/src/components/homepage/user.config/userconfig.js"
+        },
+        {
+            "/client/src/components/homepage/catch/UsersContainer.js": "/github/workspace/client/src/components/homepage/catch/UsersContainer.js"
+        },
+        {
+            "/client/src/components/homepage/catch/Catch.js": "/github/workspace/client/src/components/homepage/catch/Catch.js"
+        },
+        {
+            "/client/src/components/homepage/catch/User.js": "/github/workspace/client/src/components/homepage/catch/User.js"
+        },
+        {
+            "/client/src/components/homepage/community/commDis.js": "/github/workspace/client/src/components/homepage/community/commDis.js"
+        },
+        {
+            "/client/src/components/homepage/try/Sphere.js": "/github/workspace/client/src/components/homepage/try/Sphere.js"
+        },
+        {
+            "/client/src/components/homepage/try/PopupWin.js": "/github/workspace/client/src/components/homepage/try/PopupWin.js"
+        },
+        {
+            "/client/src/components/homepage/try/Try.js": "/github/workspace/client/src/components/homepage/try/Try.js"
+        },
+        {
+            "/client/src/components/landingpage/SignupForm.js": "/github/workspace/client/src/components/landingpage/SignupForm.js"
+        },
+        {
+            "/client/src/components/landingpage/FormInputs.js": "/github/workspace/client/src/components/landingpage/FormInputs.js"
+        },
+        {
+            "/client/src/components/landingpage/About.js": "/github/workspace/client/src/components/landingpage/About.js"
+        },
+        {
+            "/client/src/components/landingpage/Basics.js": "/github/workspace/client/src/components/landingpage/Basics.js"
+        },
+        {
+            "/client/src/components/landingpage/LoginForm.js": "/github/workspace/client/src/components/landingpage/LoginForm.js"
+        },
+        {
+            "/client/src/components/landingpage/imageUploader.js": "/github/workspace/client/src/components/landingpage/imageUploader.js"
+        },
+        {
+            "/client/src/components/landingpage/LandingPage.js": "/github/workspace/client/src/components/landingpage/LandingPage.js"
+        },
+        {
+            "/client/src/components/landingpage/TwinkleBackground/TwinkleBackground.js": "/github/workspace/client/src/components/landingpage/TwinkleBackground/TwinkleBackground.js"
+        },
+        {
+            "/client/src/__test__/sample.test.js": "/github/workspace/client/src/__test__/sample.test.js"
+        },
+        {
+            "/client/src/context/SignUpContext.js": "/github/workspace/client/src/context/SignUpContext.js"
+        }
+    ],
+    "good_finding": {
+        "Application Related": [
+            {
+                "description": "Strict Mode allows you to place a program, or a function, in a \"strict\" operating context. This strict context prevents certain actions from being taken and throws more exceptions.",
+                "filename": "jquery.tablesorter.min.js",
+                "line": 5,
+                "lines": "! function(a) {\n    \"function\" == typeof define && define.amd ? define([\"jquery\"], a) : \"object\" == typeof module && \"object\" == typeof module.exports ? module.exports = a(require(\"jquery\")) : a(jQuery)\n}(function(a) {\n        return function(a) {\n                \"use strict\";\n                a.extend({\n                            tablesorter: new function() {\n                                    function b(b, c, d, e) {\n                                        for (var f, g, h = q.parsers.length, i = !1, j = \"\", k = !0;",
+                "path": "/github/workspace/Documents/LoadTests/HTMLReport/content/js/jquery.tablesorter.min.js",
+                "sha2": "64d29fbe25462be93fec99fee2b32e321f66512efbfc7f23a0a7a8821705b80f",
+                "tag": "node",
+                "title": "Use Strict"
+            },
+            {
+                "description": "Strict Mode allows you to place a program, or a function, in a \"strict\" operating context. This strict context prevents certain actions from being taken and throws more exceptions.",
+                "filename": "jquery.js",
+                "line": 16,
+                "lines": " *\n *\n Date: 2018 - 01 - 20 T17: 24 Z *\n     /\n     (function(global, factory) {\n\n             \"use strict\";\n\n             if (typeof module === \"object\" && typeof module.exports === \"object\") {\n\n                 // For CommonJS and CommonJS-like environments where a proper `window`",
+                "path": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/jquery/dist/jquery.js",
+                "sha2": "527211f195c42fd0f0f525be8f4a61d1e2940ef206e492f7df8cbb77ac3d13db",
+                "tag": "node",
+                "title": "Use Strict"
+            },
+            {
+                "description": "Strict Mode allows you to place a program, or a function, in a \"strict\" operating context. This strict context prevents certain actions from being taken and throws more exceptions.",
+                "filename": "jquery.js",
+                "line": 46,
+                "lines": "// Edge <= 12 - 13+, Firefox <=18 - 45+, IE 10 - 11, Safari 5.1 - 9+, iOS 6 - 9.1\n// throw exceptions when non-strict code (e.g., ASP.NET 4.5) accesses strict mode\n// arguments.callee.caller (trac-13335). But as of jQuery 3.0 (2016), strict mode should be common\n// enough that all such attempts are guarded in a try block.\n\"use strict\";\n\nvar arr = [];\n\nvar document = window.document;",
+                "path": "/github/workspace/Documents/LoadTests/HTMLReport/sbadmin2-1.0.7/bower_components/jquery/dist/jquery.js",
+                "sha2": "3bd90b60d691ebd40346e0f5cf417da62e53df0523fb8595943e33e45ea7db23",
+                "tag": "node",
+                "title": "Use Strict"
+            }
+        ]
+    },
+    "missing_sec_header": {
+        "Web Security": [
+            {
+                "description": "Content Security Policy (CSP), a mechanism web applications can use to mitigate a broad class of content injection vulnerabilities, such as cross-site scripting (XSS). CSP Header was not found.",
+                "tag": "web",
+                "title": "Missing Security Header - Content-Security-Policy (CSP)"
+            },
+            {
+                "description": "X-Frame-Options (XFO) header provides protection against Clickjacking attacks.",
+                "tag": "web",
+                "title": "Missing Security Header - X-Frame-Options (XFO)"
+            },
+            {
+                "description": "Strict-Transport-Security (HSTS) header enforces secure (HTTP over SSL/TLS) connections to the server.",
+                "tag": "web",
+                "title": "Missing Security Header - Strict-Transport-Security (HSTS)"
+            },
+            {
+                "description": "Public-Key-Pins (HPKP) ensures that certificate is Pinned.",
+                "tag": "web",
+                "title": "Missing Security Header - Public-Key-Pins (HPKP)"
+            },
+            {
+                "description": "X-XSS-Protection header set to 1 enables the Cross-site scripting (XSS) filter built into most recent web browsers.",
+                "tag": "web",
+                "title": "Missing Security Header - X-XSS-Protection:1"
+            },
+            {
+                "description": "X-Content-Type-Options header prevents Internet Explorer and Google Chrome from MIME-sniffing a response away from the declared content-type.",
+                "tag": "web",
+                "title": "Missing Security Header - X-Content-Type-Options"
+            },
+            {
+                "description": "X-Download-Options header set to noopen prevents IE users from directly opening and executing downloads in your site's context.",
+                "tag": "web",
+                "title": "Missing Security Header - X-Download-Options: noopen"
+            },
+            {
+                "description": "JavaScript can access Cookies if they are not marked httpOnly.",
+                "tag": "web",
+                "title": "Missing 'httpOnly' in Cookie"
+            },
+            {
+                "description": "Remove the X-Powered-By header to prevent information gathering.",
+                "tag": "web",
+                "title": "Information Disclosure - X-Powered-By"
+            }
+        ]
+    },
+    "sec_issues": {
+        "Application Related": [
+            {
+                "description": "A hardcoded password in plain text was identified.",
+                "filename": "userconfig.js",
+                "line": 213,
+                "lines": "          'Content-Type': 'application/json',\n          'Authorization': `Bearer ${token}`\n          },\n          body: JSON.stringify({\n          'currentPassword': password,\n          'password': newpwd,\n          'profilePicture': profilePic\n          }),\n          });\n          console.log(res);",
+                "path": "/github/workspace/client/src/components/homepage/user.config/userconfig.js",
+                "sha2": "56d6786c43614f38c24d819180b2cdf792521334d42c63b00e5a6b56041015d0",
+                "tag": "node",
+                "title": "Password Hardcoded"
+            },
+            {
+                "description": "A hardcoded password in plain text was identified.",
+                "filename": "SignupForm.js",
+                "line": 66,
+                "lines": "              headers: {\n                      'Content-Type': 'application/json'\n                  },\n                  body: JSON.stringify({\n                      'username': data['username'],\n                      'password': data['password']\n                  })\n              })\n              .then(res2 => res2.json());\n              localStorage.setItem(\"token\", res2.token);",
+                "path": "/github/workspace/client/src/components/landingpage/SignupForm.js",
+                "sha2": "28e46a5dd41228e22eb25d4b584e075ba5abcfc58d259764389f816a9bca6b9a",
+                "tag": "node",
+                "title": "Password Hardcoded"
+            },
+            {
+                "description": "A hardcoded password in plain text was identified.",
+                "filename": "LoginForm.js",
+                "line": 29,
+                "lines": "            headers: {\n                    'Content-Type': 'application/json'\n                },\n                body: JSON.stringify({\n                    'username': username,\n                    'password': password\n                }),\n            })\n            .then(res => res.json());",
+                "path": "/github/workspace/client/src/components/landingpage/LoginForm.js",
+                "sha2": "bbdfdac52c5f19032f58cd4a8fa39447f76be7195140fd3502cbe1fef77366a1",
+                "tag": "node",
+                "title": "Password Hardcoded"
+            }
+        ]
+    },
+    "total_count": {
+        "good": 3,
+        "mis": 9,
+        "sec": 3
+    },
+    "vuln_count": {
+        "Password Hardcoded": 3
+    }
+}
