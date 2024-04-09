@@ -21,7 +21,7 @@ function formatDate(date) {
 }
 
 export default function Messages({ message, own, burn, mediaLinks, onDelete }) {
-    
+
     const showMessageHandler = () => {
         alert('' + message.body);
         if (!own && burn) {

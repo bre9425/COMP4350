@@ -7,7 +7,8 @@ const serverPort = process.env.REACT_APP_SERVER_PORT;
 
 const User = ({ user }) => {
   const navigate = useNavigate();
-  const [actionCompleted, setActionCompleted] = useState(false);
+  const [actionChatCompleted, setActionChatCompleted] = useState(false);
+  const [actionBlockCompleted, setActionBlockCompleted] = useState(false);
 
   const handleChatNowClick = async () => {
     try {
@@ -24,7 +25,7 @@ const User = ({ user }) => {
       });
       const data = await res.json();
       console.log(`The response is: ${data}`);
-      setActionCompleted(true);
+      setActionChatCompleted(true);
     }
     catch(err) {
       console.log(err);
@@ -32,33 +33,38 @@ const User = ({ user }) => {
   };
 
   const handleBlockClick = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      const res = await fetch(`${serverURL}:${serverPort}/api/user/blockUser`, {
-        method: "PUT",
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + token,
-        },
-        body: JSON.stringify({
-          'username': user.username
-        }),
-      });
-      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-      const data = await res.json();
-      console.log(`The response is: ${data}`);
-      setActionCompleted(true);
-    } catch(err) {
-      console.log(err);
+    if (window.confirm('Are you sure you want to block this user?')) {
+      try {
+        const token = localStorage.getItem('token');
+        const res = await fetch(`${serverURL}:${serverPort}/api/user/blockUser`, {
+          method: "PUT",
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token,
+          },
+          body: JSON.stringify({
+            'username': user.username
+          }),
+        });
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        const data = await res.json();
+        console.log(`The response is: ${data}`);
+        setActionBlockCompleted(true);
+      } catch(err) {
+        console.log(err);
+      }
     }
   };
   
 
   useEffect(() => {
-    if (actionCompleted) {
+    if (actionChatCompleted) {
       navigate('/finally');
     }
-  }, [actionCompleted, navigate]);
+    if (actionBlockCompleted) {
+      window.location.reload();
+    }
+  }, [actionChatCompleted, actionBlockCompleted, navigate]);
 
   return (
     <div className="user-container">

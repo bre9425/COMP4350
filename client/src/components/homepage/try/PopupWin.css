@@ -100,3 +100,13 @@
 .popup-win-slide-down-like {
     animation: slideDownLike 0.8s ease-in-out forwards;
 }
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+

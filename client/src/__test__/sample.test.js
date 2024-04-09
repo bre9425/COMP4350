@@ -98,7 +98,7 @@ describe('UserConfig Component', () => {
     const confirmNewPasswordInput = screen.getByPlaceholderText('Confirm New Password');
     fireEvent.change(newPasswordInput, { target: { value: 'newPassword123' } });
     fireEvent.change(confirmNewPasswordInput, { target: { value: 'newPassword123' } });
-    const submitButton = screen.getByRole('button', { name: 'Update Info' });
+    const submitButton = screen.getByRole('button', { name: 'Update Password' });
     expect(submitButton).not.toBeDisabled();
   });
 

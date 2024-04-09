@@ -22,12 +22,15 @@ const Sphere = () => {
             'Authorization': 'Bearer ' + token,
           },
         });
+        
         const data = await res.json();
         const users = data.listUsers.map(user => ({
           id: user._id,
           username: user.username,
           interests: user.interests,
-          pictures: user.pictures
+          pictures: user.pictures,
+          bio: user.bio && user.bio.trim().length > 0 ? user.bio : 'User is lazy, no bio yet :)',
+          commonInterestsCount: user.commonInterestsCount
         }));
         setMatches(users);
       } catch (err) {
@@ -59,7 +62,8 @@ const Sphere = () => {
     const labels = [];
 
     matches.forEach((match, index) => {
-      const material = new THREE.MeshBasicMaterial({ color: 0xabcdef });
+      const materialColor = match.commonInterestsCount === 0 ? 0xff0000 : 0xabcdef;
+      const material = new THREE.MeshBasicMaterial({ color: materialColor });
       const node = new THREE.Mesh(nodeGeometry, material);
       node.userData = match;
 
@@ -115,7 +119,8 @@ const Sphere = () => {
             id: intersects[0].object.userData.id,
             username: intersects[0].object.userData.username,
             interests: intersects[0].object.userData.interests,
-            pictures: intersects[0].object.userData.pictures
+            pictures: intersects[0].object.userData.pictures,
+            bio: intersects[0].object.userData.bio
           };
           setSelectedUser(userData);
           setIsModalOpen(true);

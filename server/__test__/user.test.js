@@ -122,7 +122,7 @@ describe ('POST /login', () =>{
 
 
 
-describe('GET /getUser', () => {
+describe('POST /getUser', () => {
     let token;
     let userID;
 
@@ -165,7 +165,7 @@ describe('GET /getUser', () => {
     it('should return 201 and user data for a valid user id and token', async () => {
 
         const response = await request(app)
-            .get('/api/user/getUser')
+            .post('/api/user/getUser')
             .set('Authorization', `Bearer ${token}`)
             .send({ _id: userID });
 
@@ -178,7 +178,7 @@ describe('GET /getUser', () => {
         const invalidUserID = 'someInvalidUserID';
 
         const response = await request(app)
-            .get('/api/user/getUser')
+            .post('/api/user/getUser')
             .set('Authorization', `Bearer ${token}`) // Use the same token
             .send({ _id: invalidUserID });
 
@@ -188,7 +188,7 @@ describe('GET /getUser', () => {
 
     it('should return a 401 error for missing or invalid token', async () => {
         const response = await request(app)
-            .get('/api/user/getUser')
+            .post('/api/user/getUser')
             .send({ _id: 'anyUserID' }); // No Authorization header set
 
         expect(response.statusCode).toBe(401);

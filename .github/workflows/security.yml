@@ -1,0 +1,24 @@
+name: static analysis Scan
+
+on:
+  push:
+    branches: [develop, main]
+  pull_request:
+    branches: [develop, main]
+
+jobs:
+  Scan-Build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Perform Scan
+      uses: AppThreat/sast-scan-action@master
+      with:
+        type: "nodejs"
+    - name: Upload Report
+      uses: actions/upload-artifact@v2
+      with:
+        name: reports
+        path: reports

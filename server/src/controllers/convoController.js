@@ -20,7 +20,8 @@ export async function getConvos(req, res){
 
         const usernames = convo.map(conv => ({
             _id: conv._id,
-            username: conv.users[0].username
+            username: conv.users[0].username,
+            userId: conv.users[0]._id
         }));
 
         res.status(200).json(usernames); 

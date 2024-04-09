@@ -9,7 +9,7 @@ router.post('/validate', validUsername);
 router.post('/login', login)
 
 router.get('/getMatches', decodeJWT, getInterestMatches)
-router.get('/getUser', decodeJWT, getUserData)
+router.post('/getUser', decodeJWT, getUserData)
 router.post('/modifyUser', decodeJWT, modifyUser)
 router.post('/likeDislike', decodeJWT, likeDislike)
 router.get('/getLikes',decodeJWT, getLikes)

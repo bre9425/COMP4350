@@ -1,11 +1,71 @@
-.container {
-    display: flex;
+.config-page {
+    display: grid;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: scroll;
 }
 
-.button, .link-button {
+@media (min-width: 0px) and (max-width: 768px) and (max-height: 380px) {
+    .config-page {
+        height: 35vh;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) and (min-height: 381px) and (max-height: 500px) {
+    .config-page {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) and (min-height: 501px) and (max-height: 600px) {
+    .config-page {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) and (min-height: 601px) and (max-height: 700px) {
+    .config-page {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) and (min-height: 701px) {
+    .config-page {
+        height: 75vh;
+    }
+}
+
+@media (min-width: 769px) and (max-height: 500px) {
+    .config-page {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 769px) and (min-height: 501px) and (max-height: 630px) {
+    .config-page {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 769px) and (min-height: 631px) {
+    .config-page {
+        height: 80vh;
+    }
+}
+
+.twinkling-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.button, 
+.link-button {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.7);
     color: rgba(255, 255, 255, 0.7);
@@ -17,49 +77,102 @@
     cursor: pointer;
 }
 
-.input-field {
-    display: block;
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #9a92d7;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #fff;
-    color: #333;
+.upload-image-button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 4%;
+    margin-bottom: 12%;
+    margin-left: 23.5%;
 }
 
-.input-field:hover {
-    box-shadow: 0 4px 6px rgba(154, 228, 235, 0.818);
+.save-new-image-button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 463px;
+    margin-top: 11%;
+    margin-left: 4.5%;
+}
+
+.update-info-button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.upload-image-button:hover,
+.save-new-image-button:hover,
+.update-info-button:hover {
     animation: border-color-change 4s infinite;
+    background-color: #9a92d7;
+    color: black;
 }
 
-@keyframes border-color-change {
-    0% { border-color: #9a92d7; }
-    50% { border-color: rgb(213, 243, 251); }
-    100% { border-color: #9a92d7; }
+input[type="file"] {
+    color: black;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 10%;
+    width: 91.5%;
 }
 
-.label {
-    color: white;
-    margin-bottom: 5px;
+.profile-picture-container {
+    width: 100px;
+    height: 110px;
+    margin-top: 3%;
+    margin-bottom: 4%;
 }
 
 .profile-picture {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    margin: 20px;
+    border-radius: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .settings-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    width: 463px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.settings-password-container {
+    display: grid;
+    flex-direction: column;
     align-items: center;
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
+    justify-content: center;
+}
+
+.label {
+    color: white;
+    margin-bottom: 5%;
 }
 
 .new-password {
@@ -67,21 +180,35 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
-.twinkling-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; 
-  }
-  
-  .config-page {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
+.current-media-link {
+    display: flex;
+    align-items: center;
+}
+
+.current-media-preview {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.current-profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 16%;
+    margin-bottom: 4%;
+    margin-right: 4%;
+}
+
+.current-user-name {
+    color: white;
+    margin-top: 16%;
+    margin-left: 4%;
+}
+
+
+
   

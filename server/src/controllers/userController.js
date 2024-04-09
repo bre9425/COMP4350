@@ -47,7 +47,7 @@ export async function uploadImages(req, res){
             return;
         }
 
-        user.pictures.push(...pictureURL);
+        user.pictures = pictureURL;
 
         await user.save();
 
@@ -234,17 +234,18 @@ export async function getInterestMatches(req, res){
         const likedUsers = Array.from(user.likes.keys());
         const dislikedUsers = user.dislikes;
 
-        const excludedUsers = [...likedUsers, ...dislikedUsers, user._id];
+        const excludedUsers = [...likedUsers, ...dislikedUsers, user._id]; 
 
         const pipeline = [
             { 
-                $match: { _id: { $nin: excludedUsers}} 
+                $match: { _id: { $nin: excludedUsers}}
             },
             { 
                 $project: {
                     username: 1,
                     interests: 1,
                     pictures: 1,
+                    bio: 1,
                     commonInterestsCount: { $size: { $setIntersection: ["$interests", userInterests] } },
             }},
             {
