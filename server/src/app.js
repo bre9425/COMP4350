@@ -36,6 +36,7 @@ app.use('/api/community', communityRouter);
 app.use('/api/images', imageRouter);
 
 
+
 if (process.env.NODE_ENV !== 'test') {
   app.listen(port, () => {
     console.log(`Server is up on port ${appUrl}:${port}`)
